@@ -11,8 +11,8 @@ namespace DAL.Data
 
     }
 
-    //public virtual DbSet<Card> Cards { get; set; }
-    protected override void OnModelCreating(ModelBuilder builder)
+		public virtual DbSet<Category> Categories { get; set; }
+		protected override void OnModelCreating(ModelBuilder builder)
     {
       base.OnModelCreating(builder);
 			builder.ApplyConfiguration(new RoleConfiguration());

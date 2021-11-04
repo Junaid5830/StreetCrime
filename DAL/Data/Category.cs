@@ -1,10 +1,15 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Identity;
+using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace DAL.Models
+#nullable disable
+
+namespace DAL.Data
 {
-  public class CategoryDTO
+  public class Category
   {
+    [Key]
     public int CategoryId { get; set; }
     public string Title { get; set; }
     public string IconPath { get; set; }

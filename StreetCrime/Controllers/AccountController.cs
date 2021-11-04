@@ -13,6 +13,7 @@ using System.Threading.Tasks;
 using StreetCrime.Configurations;
 using Common;
 using DAL.IRepository;
+using Microsoft.AspNetCore.Authorization;
 
 namespace StreetCrime.Controllers
 {
@@ -168,7 +169,6 @@ namespace StreetCrime.Controllers
       }
     }
     #endregion
-
 
     #endregion
   }
